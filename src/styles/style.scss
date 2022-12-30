@@ -1,0 +1,22 @@
+body {
+  background-color: pink;
+
+  h1 {
+    letter-spacing: 0;
+    animation: spaceLetters 3s;
+    animation-fill-mode: forwards; //letter spacing stays//
+    animation-delay: 4s;
+  }
+}
+
+@keyframes spaceLetters {
+  from {
+    letter-spacing: 0;
+    opacity: 0;
+  }
+
+  to {
+    letter-spacing: 2ch;
+    opacity: 1;
+  }
+}
