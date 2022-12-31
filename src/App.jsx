@@ -4,7 +4,7 @@ import './styles/style.scss';
 export default function App() {
 
   return (
-    <div>
+    <div id='body'>
       <Home />
     </div>
   )

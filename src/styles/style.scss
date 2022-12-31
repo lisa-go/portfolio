@@ -1,22 +1,26 @@
+@import 'variables.scss', 'intro.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background-color: pink;
+  overflow-x: hidden;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: white;
+  background: url(../assets/background.jpg);
+  background-size: cover;
+  font-family: $mono;
 
-  h1 {
-    letter-spacing: 0;
-    animation: spaceLetters 3s;
-    animation-fill-mode: forwards; //letter spacing stays//
-    animation-delay: 4s;
+  #body {
+    width: 100%;
+    height: 100%;
+
+    #content {
+      @extend #body;
+    }
   }
 }
 
-@keyframes spaceLetters {
-  from {
-    letter-spacing: 0;
-    opacity: 0;
-  }
-
-  to {
-    letter-spacing: 2ch;
-    opacity: 1;
-  }
-}
