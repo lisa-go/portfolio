@@ -1,4 +1,5 @@
 import Introduction from "./Introduction";
+import Projects from "./Projects";
 
 
 export default function Home() {
@@ -6,9 +7,7 @@ export default function Home() {
     return (
         <div id="content">
             <Introduction />
-            <div style={{width: '300px'}}>
-                <h1>Praesentium, asperiores! Qui voluptate rem omnis impedit asperiores?</h1>
-            </div>
+            <Projects />
         </div>
     )
 }
