@@ -1,7 +1,6 @@
 import { projectlist } from "./Projectslist";
 
-
-export default function Projects () {
+export default function Projects ({ proRef }) {
 
     let colors = [
         '#7bdff2', 
@@ -17,7 +16,7 @@ export default function Projects () {
     }
 
     return (
-        <div id="projectcont"><a id="projects"> </a>
+        <div id="projectcont" ref={proRef}>
             {projectlist.map((pro) => 
                 <div className="project" key={pro.id}
                     style={{borderColor: getColor(pro.id)}}>
