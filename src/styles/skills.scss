@@ -1,0 +1,67 @@
+#skillcont {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    min-height: 80vh;
+    margin: 10vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .header {
+        align-self: center;
+        font-family: $fancy;
+        font-size: 3rem;
+        color: $cr;
+    }
+
+    ul {
+        list-style: none;
+        width: 50%;
+        padding: 4rem;
+        display: grid;
+        grid-template-columns: repeat(3, 120px);
+        justify-content: center;
+        gap: 1rem;
+
+        li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 3px;
+            word-wrap: break-word;
+            width: 100px;
+            height: 100px;
+            border-radius: 8px;
+            border: 3px solid rgba(236, 186, 156);
+            color: rgba(236, 186, 156);
+            font-weight: 700;
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+    }
+}
+
+@media screen and (max-width: $small) {
+    #skillcont {
+        .header {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: $smaller) {
+    #skillcont {
+        padding: 2rem 0;
+
+        ul {
+            grid-template-columns: repeat(3, 90px);
+            
+            li {
+                width: 85px;
+                height: 85px;
+            }
+        }
+    }
+}

@@ -3,7 +3,7 @@ import { GrGraphQl } from 'react-icons/gr';
 import { HiOutlineMail } from 'react-icons/hi';
 
 
-export default function Introduction({ intRef, proRef, handleClick }) {
+export default function Introduction({ intRef, proRef, skiRef, handleClick }) {
 
     return (
         <div id="intro" ref={intRef}>
@@ -16,7 +16,7 @@ export default function Introduction({ intRef, proRef, handleClick }) {
                             <VscFileSubmodule size={35} />
                             <span>Projects</span>
                         </button>
-                        <button className="skillbtn">
+                        <button className="skillbtn" onClick={() => handleClick(skiRef)}>
                             <GrGraphQl size={35} />
                             <span>Skills</span>
                         </button>

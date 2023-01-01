@@ -79,9 +79,7 @@
 
 @media screen and (max-width: $med) {
     #projectcont {
-
         #projects {
-
             .project {
                 margin: 1rem;
                 width: 80vw;
@@ -100,7 +98,6 @@
         }
 
         #projects {
-            
             .project {
                 padding: 1rem;
 
@@ -112,7 +109,6 @@
                     transform: scale(0.9);
                 }
             }
-
         }
     }
 }

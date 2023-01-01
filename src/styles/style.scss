@@ -1,4 +1,4 @@
-@import 'variables.scss', 'intro.scss', 'projects.scss';
+@import 'variables.scss', 'intro.scss', 'projects.scss', 'skills.scss';
 
 * {
   margin: 0;
@@ -20,6 +20,9 @@ body {
 
     #content {
       @extend #body;
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
     }
   }
 }
@@ -43,11 +46,5 @@ a {
     background-color: white;
     color: $nv;
     transform: translateX(-350%) scale(1.1);
-  }
-}
-
-@media screen and (max-width: $small) {
-  .topbtn {
-    transform: translateX(-100%);
   }
 }
