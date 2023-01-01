@@ -28,3 +28,26 @@ a {
   text-decoration: inherit;
   color: inherit;
 }
+
+.topbtn {
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  align-self: flex-end;
+  transform: translateX(-350%);
+  border-radius: 8px;
+  border: 3px solid $nv;
+  background-color: $cr;
+
+  &:hover {
+    background-color: white;
+    color: $nv;
+    transform: translateX(-350%) scale(1.1);
+  }
+}
+
+@media screen and (max-width: $small) {
+  .topbtn {
+    transform: translateX(-100%);
+  }
+}

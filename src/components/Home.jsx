@@ -18,7 +18,9 @@ export default function Home() {
                 proRef={proRef} 
                 handleClick={handleClick} />
             <Projects 
-                proRef={proRef} />
+                intRef={intRef}
+                proRef={proRef} 
+                handleClick={handleClick} />
         </div>
     )
 }

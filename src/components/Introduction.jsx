@@ -16,11 +16,11 @@ export default function Introduction({ intRef, proRef, handleClick }) {
                             <VscFileSubmodule size={35} />
                             <span>Projects</span>
                         </button>
-                        <button className="skillbtn" href="#skills">
+                        <button className="skillbtn">
                             <GrGraphQl size={35} />
                             <span>Skills</span>
                         </button>
-                        <button className="contactbtn" href="#contact">
+                        <button className="contactbtn">
                             <HiOutlineMail size={35} />
                             <span>Contact</span>
                         </button>

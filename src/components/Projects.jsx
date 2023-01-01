@@ -1,6 +1,9 @@
 import { projectlist } from "./Projectslist";
+import { BiArrowToTop } from "react-icons/bi";
+import { FaGithubAlt } from "react-icons/fa";
+import { ImEnter } from "react-icons/im";
 
-export default function Projects ({ proRef }) {
+export default function Projects ({ intRef, proRef, handleClick }) {
 
     let colors = [
         '#7bdff2', 
@@ -17,19 +20,29 @@ export default function Projects ({ proRef }) {
 
     return (
         <div id="projectcont" ref={proRef}>
-            {projectlist.map((pro) => 
-                <div className="project" key={pro.id}
-                    style={{borderColor: getColor(pro.id)}}>
-                    <img src={pro.image} alt={pro.name} className="ss" />
-                    <div className="proname">{pro.name}</div>
-                    <div className="prolink">
-                        <a href={pro.github}>Github</a>
-                        <a href={pro.preview}>Preview</a>
-                        
-                    </div>
-                    
-                </div> 
-            )}
+            <div className="header">My Projects</div>
+            <div id="projects">
+                {projectlist.map((pro) => 
+                    <div className="project" key={pro.id}
+                        style={{borderColor: getColor(pro.id)}}>
+                        <img src={pro.image} alt={pro.name} className="ss" />
+                        <div className="proname">{pro.name}</div>
+                        <div className="prolink">
+                            <a href={pro.github}>
+                                <FaGithubAlt size={35} />
+                                <span>Github</span>
+                            </a>
+                            <a href={pro.preview}>
+                                <ImEnter size={35} />
+                                <span>Preview</span>
+                            </a>
+                        </div>
+                    </div> 
+                )}
+            </div>
+            <button className="topbtn" onClick={() => handleClick(intRef)}>
+                <BiArrowToTop size={35} />
+            </button>
         </div>
     )
 }
