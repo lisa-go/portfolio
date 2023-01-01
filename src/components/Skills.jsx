@@ -4,8 +4,7 @@ import { DiVisualstudio } from "react-icons/di";
 import { FaGitAlt, FaGithubAlt } from "react-icons/fa";
 import { BiArrowToTop } from "react-icons/bi";
 
-export default function Skills ({ intRef, skiRef, handleClick }) {
-
+export default function Skills({ intRef, skiRef, handleClick }) {
     return (
         <div id="skillcont" ref={skiRef}>
             <div className="header">My Skills</div>

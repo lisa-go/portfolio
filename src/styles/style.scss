@@ -1,4 +1,4 @@
-@import 'variables.scss', 'intro.scss', 'projects.scss', 'skills.scss';
+@import 'variables.scss', 'intro.scss', 'projects.scss', 'skills.scss', 'contact.scss';
 
 * {
   margin: 0;
@@ -20,9 +20,6 @@ body {
 
     #content {
       @extend #body;
-      display: flex;
-      flex-direction: column;
-      gap: 4rem;
     }
   }
 }

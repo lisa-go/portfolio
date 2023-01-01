@@ -21,7 +21,7 @@
         opacity: 0;
         animation: opacityTransform 2s;
         animation-fill-mode: forwards;
-        animation-delay: 1s;
+        animation-delay: 0.8s;
 
         #introtext {
             aspect-ratio: 1 / 1;
@@ -38,7 +38,7 @@
             opacity: 0;
             animation: opacityChange 2s;
             animation-fill-mode: forwards;
-            animation-delay: 3s;
+            animation-delay: 2.5s;
 
             .header {
                 font-family: $fancy;
@@ -135,7 +135,7 @@
             #introtext {
                 gap: 8px;
                 width: 65%;
-                
+
                 .header {
                     font-size: 1.5rem;
                 }

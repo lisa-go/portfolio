@@ -2,12 +2,13 @@ import Introduction from "./Introduction";
 import Projects from "./Projects";
 import { useRef } from "react";
 import Skills from "./Skills";
-
+import Contact from "./Contact";
 
 export default function Home() {
     const intRef = useRef();
     const proRef = useRef();
     const skiRef = useRef();
+    const conRef = useRef();
 
     const handleClick = (r) => {
         r.current.scrollIntoView({ behavior: 'smooth' })
@@ -15,18 +16,23 @@ export default function Home() {
 
     return (
         <div id="content">
-            <Introduction 
+            <Introduction
                 intRef={intRef}
-                proRef={proRef} 
+                proRef={proRef}
+                skiRef={skiRef}
+                conRef={conRef}
+                handleClick={handleClick} />
+            <Projects
+                intRef={intRef}
+                proRef={proRef}
+                handleClick={handleClick} />
+            <Skills
+                intRef={intRef}
                 skiRef={skiRef}
                 handleClick={handleClick} />
-            <Projects 
+            <Contact
                 intRef={intRef}
-                proRef={proRef} 
-                handleClick={handleClick} />
-            <Skills 
-                intRef={intRef}
-                skiRef={skiRef} 
+                conRef={conRef}
                 handleClick={handleClick} />
         </div>
     )
