@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+$small: 700px;
+
 $fancy: 'Leckerli One', cursive;
 $mono: 'Ubuntu Mono', monospace; //avail 400, 400italic, 700bold, 700bold italic//
 
@@ -32,10 +34,12 @@ $nv: #7985cf;
 @keyframes opacityChange {
     from {
         opacity: 0;
+        
     }
 
     to {
         opacity: 1;
+        
     }
 }
 
