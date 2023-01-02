@@ -27,11 +27,11 @@ export default function Projects({ intRef, proRef, handleClick }) {
                         <img src={pro.image} alt={pro.name} className="ss" />
                         <div className="proname">{pro.name}</div>
                         <div className="prolink">
-                            <a href={pro.github}>
+                            <a href={pro.github} target="_blank">
                                 <FaGithubAlt size={35} />
                                 <span>Github</span>
                             </a>
-                            <a href={pro.preview}>
+                            <a href={pro.preview} target="_blank">
                                 <ImEnter size={35} />
                                 <span>Preview</span>
                             </a>
