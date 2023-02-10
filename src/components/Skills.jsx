@@ -3,6 +3,8 @@ import { IoLogoReact } from "react-icons/io5";
 import { DiVisualstudio } from "react-icons/di";
 import { FaGitAlt, FaGithubAlt } from "react-icons/fa";
 import { BiArrowToTop } from "react-icons/bi";
+import { SiTypescript } from "react-icons/si";
+
 
 export default function Skills({ intRef, skiRef, handleClick }) {
     return (
@@ -10,24 +12,32 @@ export default function Skills({ intRef, skiRef, handleClick }) {
             <div className="header">My Skills</div>
             <ul>
                 <li>
-                    <IoLogoHtml5 size={50} />
-                    <span>Html</span>
-                </li>
-                <li>
-                    <IoLogoCss3 size={50} />
-                    <span>Css</span>
-                </li>
-                <li>
-                    <IoLogoJavascript size={50} />
-                    <span>Javascript</span>
-                </li>
-                <li>
                     <IoLogoReact size={50} />
                     <span>React</span>
                 </li>
                 <li>
                     <IoLogoSass size={50} />
                     <span>Sass</span>
+                </li>
+                <li>
+                    <IoLogoJavascript size={50} />
+                    <span>Javascript</span>
+                </li>
+                <li>
+                    <SiTypescript size={50} />
+                    <span>Typescript</span>
+                </li>
+                <li>
+                    <IoLogoReact size={50} />
+                    <span>React Native</span>
+                </li>
+                <li>
+                    <IoLogoCss3 size={50} />
+                    <span>Css</span>
+                </li>
+                <li>
+                    <IoLogoHtml5 size={50} />
+                    <span>Html</span>
                 </li>
                 <li>
                     <DiVisualstudio size={50} />

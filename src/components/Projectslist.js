@@ -36,13 +36,6 @@ export let projectlist = [
     },
     {
         id: 5,
-        name: 'memory-card-game',
-        image: 'https://i.imgur.com/Je8Cg6C.png',
-        github: 'https://github.com/lisa-go/memory-card-game',
-        preview: 'https://lisa-go.github.io/memory-card-game/'
-    },
-    {
-        id: 6,
         name: 'etch-a-sketch',
         image: 'https://i.imgur.com/25dubso.png',
         github: 'https://github.com/lisa-go/etch-a-sketch',

@@ -11,9 +11,6 @@ export default function Projects({ intRef, proRef, handleClick }) {
         '#F7D6E0',
         '#F2B5D4',
         '#cdb4db',
-        '#E7CEE3',
-        '#E4B4C2',
-        '#E0E1E9'
     ]
 
     const getColor = (id) => {
