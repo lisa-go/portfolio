@@ -1,4 +1,5 @@
-@import 'variables.scss', 'intro.scss', 'projects.scss', 'skills.scss', 'contact.scss';
+@import 'variables.scss', 'intro.scss', 'projects.scss', 'skills.scss',
+  'contact.scss';
 
 * {
   margin: 0;
@@ -33,15 +34,17 @@ a {
   cursor: pointer;
   width: 45px;
   height: 45px;
-  align-self: flex-end;
-  transform: translateX(-350%);
   border-radius: 8px;
   border: 3px solid $nv;
   background-color: $cr;
+  position: fixed;
+  bottom: 4%;
+  right: 5%;
 
   &:hover {
     background-color: white;
     color: $nv;
-    transform: translateX(-350%) scale(1.1);
+    transform: scale(1.1);
+    transition: 500ms;
   }
 }

@@ -6,6 +6,5 @@ export default function App() {
     <div id='body'>
       <Home />
     </div>
-  )
+  );
 }
-

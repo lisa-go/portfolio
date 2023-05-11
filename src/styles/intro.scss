@@ -1,159 +1,167 @@
 #intro {
-    height: 100vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  #top {
+    position: absolute;
+    top: 0;
+  }
+
+  .cir {
+    aspect-ratio: 1 / 1;
+    width: fit-content;
+    padding: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    clip-path: circle(50% at 50% 50%);
+    background-color: rgba(236, 186, 156, 0.5);
+    opacity: 0;
+    animation: opacityTransform 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.8s;
 
-    #top {
-        position: absolute;
-        top: 0;
-    }
+    #introtext {
+      aspect-ratio: 1 / 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 1.5rem;
+      background-color: rgba(255, 255, 255, 0.7);
+      clip-path: polygon(
+        50% 0%,
+        90% 20%,
+        100% 60%,
+        75% 100%,
+        25% 100%,
+        0% 60%,
+        10% 20%
+      );
+      padding: 2rem 3rem;
+      border-radius: 10px;
+      opacity: 0;
+      animation: opacityChange 2s;
+      animation-fill-mode: forwards;
+      animation-delay: 2.5s;
 
-    .cir {
-        aspect-ratio: 1 / 1;
-        width: fit-content;
-        padding: 3rem;
+      .header {
+        font-family: $fancy;
+        font-size: 36px;
+      }
+
+      .subtitle {
+        font-size: 1.2rem;
+      }
+
+      .btncont {
         display: flex;
         justify-content: center;
-        align-items: center;
-        clip-path: circle(50% at 50% 50%);
-        background-color: rgba(236, 186, 156, 0.5);
-        opacity: 0;
-        animation: opacityTransform 2s;
-        animation-fill-mode: forwards;
-        animation-delay: 0.8s;
+        gap: 1rem;
 
-        #introtext {
-            aspect-ratio: 1 / 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            gap: 1.5rem;
-            background-color: rgba(255, 255, 255, 0.7);
-            clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
-            padding: 2rem 3rem;
-            border-radius: 10px;
-            opacity: 0;
-            animation: opacityChange 2s;
-            animation-fill-mode: forwards;
-            animation-delay: 2.5s;
+        button {
+          cursor: pointer;
+          width: 75px;
+          height: 75px;
+          display: flex;
+          flex-direction: column;
+          gap: 3px;
+          justify-content: center;
+          align-items: center;
+          font-family: $mono;
+          font-size: 1rem;
+          border-radius: 8px;
+          border: 3px solid;
+          -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+          -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+          -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+          animation-iteration-count: infinite;
+          -webkit-animation-iteration-count: infinite;
 
-            .header {
-                font-family: $fancy;
-                font-size: 36px;
-            }
-
-            .subtitle {
-                font-size: 1.2rem;
-            }
-
-            .btncont {
-                display: flex;
-                justify-content: center;
-                gap: 1rem;
-
-                button {
-                    cursor: pointer;
-                    width: 75px;
-                    height: 75px;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 3px;
-                    justify-content: center;
-                    align-items: center;
-                    font-family: $mono;
-                    font-size: 1rem;
-                    border-radius: 8px;
-                    border: 3px solid;
-                    -webkit-animation-duration: 1.5s;
-                    animation-duration: 1.5s;
-                    -webkit-animation-fill-mode: both;
-                    animation-fill-mode: both;
-                    -webkit-animation-timing-function: ease-in-out;
-                    animation-timing-function: ease-in-out;
-                    animation-iteration-count: infinite;
-                    -webkit-animation-iteration-count: infinite;
-
-                    &:hover {
-                        animation-name: bounce;
-                        -moz-animation-name: bounce;
-                        font-weight: 700;
-                    }
-                }
-
-                .projectbtn {
-                    border-color: $lv;
-
-                    &:hover {
-                        svg {
-                            transition: 500ms;
-                            color: $lv;
-                        }
-                    }
-                }
-
-                .skillbtn {
-                    border-color: $dp;
-
-                    &:hover {
-                        svg {
-                            transition: 500ms;
-                            color: $dp;
-                        }
-                    }
-                }
-
-                .contactbtn {
-                    border-color: $bd;
-
-                    svg path {
-                        stroke-width: 1.5;
-                    }
-
-                    &:hover {
-                        svg {
-                            transition: 500ms;
-                            color: $bd;
-                        }
-                    }
-                }
-            }
+          &:hover {
+            animation-name: bounce;
+            -moz-animation-name: bounce;
+            font-weight: 700;
+          }
         }
+
+        .projectbtn {
+          border-color: $lv;
+
+          &:hover {
+            svg {
+              transition: 500ms;
+              color: $lv;
+            }
+          }
+        }
+
+        .skillbtn {
+          border-color: $dp;
+
+          &:hover {
+            svg {
+              transition: 500ms;
+              color: $dp;
+            }
+          }
+        }
+
+        .contactbtn {
+          border-color: $bd;
+
+          svg path {
+            stroke-width: 1.5;
+          }
+
+          &:hover {
+            svg {
+              transition: 500ms;
+              color: $bd;
+            }
+          }
+        }
+      }
     }
+  }
 }
 
 @media screen and (max-width: $small) {
-    #intro {
-        width: 100vw;
+  #intro {
+    width: 100vw;
 
-        .cir {
-            width: 90%;
-            padding: 0;
+    .cir {
+      width: 90%;
+      padding: 0;
 
-            #introtext {
-                gap: 8px;
-                width: 65%;
+      #introtext {
+        gap: 8px;
+        width: 65%;
 
-                .header {
-                    font-size: 1.5rem;
-                }
-
-                .subtitle {
-                    font-size: 1rem;
-                }
-
-                .btncont {
-                    gap: 8px;
-
-                    button {
-                        width: 60px;
-                        height: 60px;
-                        font-size: 0.8rem;
-                    }
-                }
-            }
+        .header {
+          font-size: 1.5rem;
         }
+
+        .subtitle {
+          font-size: 1rem;
+        }
+
+        .btncont {
+          gap: 8px;
+
+          button {
+            width: 60px;
+            height: 60px;
+            font-size: 0.8rem;
+          }
+        }
+      }
     }
+  }
 }
